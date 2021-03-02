@@ -17,6 +17,7 @@
     />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
+
   <body>
     <!-- HEADER -->
     <header>
@@ -554,7 +555,7 @@
               placeholder="E-mail"
               class="input"
             />
-            <button type="submit" class="modal-button">
+            <button type="submit" class="submit-button modal-button">
               Подписаться
               <svg class="icons">
                 <use href="./img/studio/svg/sprite.svg#icon-send"></use>
@@ -571,6 +572,36 @@
             <use href="./img/studio/svg/sprite.svg#icon-close"></use>
           </svg>
         </button>
+        <p class="title">Оставьте свои данные, мы вам перезвоним</p>
+        <form class="form-container">
+          <div class="inputs-group">
+            <input type="text" name="user-name" id="user-name" class="input" />
+            <label for="user-name" class="label">Имя</label>
+            <input type="tel" name="user-phone" id="user-phone" class="input" />
+            <label for="user-phone" class="label">Телефон</label>
+            <input
+              type="email"
+              name="user-email"
+              id="user-email"
+              class="input"
+            />
+            <label for="user-email" class="label">Почта</label>
+            <textarea
+              name="user-comment"
+              id="user-comment"
+              placeholder="Введите текст"
+              class="comment"
+            ></textarea>
+            <label for="user-comment" class="label">Комментарий</label>
+            <input type="checkbox" value="agree" id="user-agreement" />
+            <label for="user-agreement"
+              >Соглашаюсь с рассылкой и принимаю Условия договора</label
+            >
+            <button type="submit" class="submit-button modal-button">
+              Отправить
+            </button>
+          </div>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
