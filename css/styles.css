@@ -658,6 +658,11 @@ header::after {
     pointer-events 500ms var(--time-function);
 }
 
+.close-button > .icons {
+  width: 11px;
+  height: 11px;
+}
+
 .close-button {
   position: absolute;
   top: 8px;
@@ -668,11 +673,13 @@ header::after {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer;
+  transition: fill 250ms var(--time-function);
 }
 
-.close-button > .icons {
-  width: 11px;
-  height: 11px;
+.close-button:hover,
+.close-button:focus,
+.close-button:active {
+  fill: var(--accent-color);
 }
 
 /* ======= END MODAL-WINDOW ======= */
