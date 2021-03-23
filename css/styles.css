@@ -471,6 +471,7 @@ header::after {
 
 .clients .link:hover,
 .clients .link:focus {
+  outline: none;
   border-color: var(--accent-color);
   fill: var(--accent-color);
 }
@@ -580,6 +581,12 @@ header::after {
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: var(--white);
+}
+
+.subscribe-form .input:focus,
+.subscribe-form .input:active {
+  outline: none;
+  border-color: var(--accent-color);
 }
 
 .subscribe-form .input::placeholder {
