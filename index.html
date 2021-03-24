@@ -575,24 +575,26 @@
         <p class="title">Оставьте свои данные, мы вам перезвоним</p>
         <form class="form-container">
           <div class="inputs-group">
-            <input type="text" name="user-name" id="user-name" class="input" />
-            <label for="user-name" class="label">Имя</label>
-            <input type="tel" name="user-phone" id="user-phone" class="input" />
-            <label for="user-phone" class="label">Телефон</label>
-            <input
-              type="email"
-              name="user-email"
-              id="user-email"
-              class="input"
-            />
-            <label for="user-email" class="label">Почта</label>
-            <textarea
-              name="user-comment"
-              id="user-comment"
-              placeholder="Введите текст"
-              class="comment"
-            ></textarea>
-            <label for="user-comment" class="label">Комментарий</label>
+            <label class="label">
+              <span class="text-label">Имя</span>
+              <input type="text" name="user-name" class="input" />
+            </label>
+            <label class="label">
+              <span class="text-label">Телефон</span>
+              <input type="tel" name="user-phone" class="input" />
+            </label>
+            <label class="label">
+              <span class="text-label">Почта</span>
+              <input type="email" name="user-email" class="input" />
+            </label>
+            <label class="label">
+              <span class="text-label">Комментарий</span>
+              <textarea
+                name="user-comment"
+                placeholder="Введите текст"
+                class="input comment"
+              ></textarea>
+            </label>
             <input type="checkbox" value="agree" id="user-agreement" />
             <label for="user-agreement"
               >Соглашаюсь с рассылкой и принимаю Условия договора</label
