@@ -776,19 +776,27 @@ header::after {
 }
 
 .checkbox-label {
-  display: inline-flex;
-  align-items: center;
+  display: flex;
   padding: 0 11px 0 12px;
   margin-bottom: 30px;
 }
 
-.checkbox-label::before {
-  margin-right: 8px;
-  content: "";
+.custom-checkbox {
+  align-self: center;
+  order: -1;
   width: 16px;
   height: 16px;
-  border: 2px solid var(--secondary-text-color);
-  border-radius: 1.5px;
+  margin-right: 8px;
+  background-color: transparent;
+  background-image: url("/img/studio/svg/icon-uncheked.svg");
+  transition: background-color 250ms var(--time-function);
+}
+
+.checkbox:checked + .custom-checkbox {
+  background-color: var(--accent-color);
+  background-image: url("/img/studio/svg/icon-checked.svg");
+  background-origin: border-box;
+  border: transparent;
 }
 
 .checkbox-text-label {
