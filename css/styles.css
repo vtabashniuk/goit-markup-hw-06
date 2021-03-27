@@ -286,19 +286,19 @@ header::after {
 }
 
 .antenna::before {
-  background-image: url(../img/studio/our-advantages/antenna.svg);
+  background-image: url("../img/studio/our-advantages/antenna.svg");
 }
 
 .clock::before {
-  background-image: url(../img/studio/our-advantages/clock.svg);
+  background-image: url("../img/studio/our-advantages/clock.svg");
 }
 
 .diagram::before {
-  background-image: url(../img/studio/our-advantages/diagram.svg);
+  background-image: url("../img/studio/our-advantages/diagram.svg");
 }
 
 .astronaut::before {
-  background-image: url(../img/studio/our-advantages/astronaut.svg);
+  background-image: url("../img/studio/our-advantages/astronaut.svg");
 }
 
 .advantages-list .title {
@@ -788,13 +788,13 @@ header::after {
   height: 16px;
   margin-right: 8px;
   background-color: transparent;
-  background-image: url("/img/studio/svg/icon-uncheked.svg");
+  background-image: url("../img/studio/svg/icon-uncheked.svg");
   transition: background-color 250ms var(--time-function);
 }
 
 .checkbox:checked + .custom-checkbox {
   background-color: var(--accent-color);
-  background-image: url("/img/studio/svg/icon-checked.svg");
+  background-image: url("../img/studio/svg/icon-checked.svg");
   background-origin: border-box;
   border: transparent;
 }
